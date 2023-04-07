@@ -1,7 +1,10 @@
+import '@/styles/style.css';
+
+import { ChakraProvider } from '@chakra-ui/react';
 import type { AppProps } from 'next/app';
 import { QueryClient, QueryClientProvider } from 'react-query';
 
-import GlobalStyle from '@/styles/GlobalStyle';
+import suwikiTheme from '@/public/theme/theme';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -14,8 +17,9 @@ const queryClient = new QueryClient({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <QueryClientProvider client={queryClient}>
-      <GlobalStyle />
-      <Component {...pageProps} />
+      <ChakraProvider theme={suwikiTheme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
     </QueryClientProvider>
   );
 }

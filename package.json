@@ -20,12 +20,14 @@
     "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-query": "^3.39.3"
+    "react-query": "^3.39.3",
+    "react-star-ratings": "^2.3.0"
   },
   "devDependencies": {
     "@types/node": "18.13.0",
     "@types/react": "18.0.27",
     "@types/react-query": "^1.2.9",
+    "@types/react-star-ratings": "^2.3.0",
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
     "eslint": "8.34.0",
